@@ -4,40 +4,40 @@ INSERT MODE: where you can just type like normal text editor.press i for insert 
 
 COMMAND MODE:where you can give commands to the text editor to get things done.
 press ESC for command mode.
-	ESC x-to delete the unwanted character
-	ESC u-to undo the last command and U to undi the whole time
-	ESC CTRL-R to redo
-	ESC A-to append text at the end
-	ESC :wq-to save and exit
-	ESC :q!-to trash all changes
-	ESC dw-move the cursor to the begining of the word to delete the word
-	ESC 2w-to move the cursor two words forward
-	ESC 3e-to move the cursor at the end of the third word forward
-	ESC 0-to move to the start of the line
-	ESC d2w-which deletes two words
-	ESC dd-to delete the line
-	ESC p-puts the previously deleted text after the cursor
-	ESC r-to replace the character
-	ESC ce-to delete the word and places you in the insert mode
-	ESC gg-to move you to the start of the file
-	ESC %-to find matching
-	ESC G-to move to the bottom of the line
-	ESC :s/old/new/g-to substitute 'new' for 'old' for g is global	
-	ESC :| to run the shell commanands like :|dir,:||s
-	ESC :w-test and save the file
-	ESC v-starts visual mode for selecting the lines
-	ESC :r-filename will insert into the current file
-	ESC R-to replace more than one character
-	ESC y-operator to copy text using v
-	ESC yw-yanks one word
-	ESC o-opens the line below the cursor and start insert mode
-	ESC O-opens the line above the cursor
-	ESC a-insert text after the cursor
-	ESC A-insert text after the end of the line
-	ESC e-command moves to the end of thne word
-	ESC Y-operator yanks text
-	ESC R-enters replace mode until <ESC> is pressed
-	ESC ctrl-w to jump from one window to another
+	1.ESC x-to delete the unwanted character
+	2.ESC u-to undo the last command and U to undi the whole time
+	3.ESC CTRL-R to redo
+	4.ESC A-to append text at the end
+	5.ESC :wq-to save and exit
+	6.ESC :q!-to trash all changes
+	7.ESC dw-move the cursor to the begining of the word to delete the word
+	8.ESC 2w-to move the cursor two words forward
+	9.ESC 3e-to move the cursor at the end of the third word forward
+	10.ESC 0-to move to the start of the line
+	11.ESC d2w-which deletes two words
+	12.ESC dd-to delete the line
+	13.ESC p-puts the previously deleted text after the cursor
+	14.ESC r-to replace the character
+	15.ESC ce-to delete the word and places you in the insert mode
+	16.ESC gg-to move you to the start of the file
+	17.ESC %-to find matching
+	18.ESC G-to move to the bottom of the line
+	19.ESC :s/old/new/g-to substitute 'new' for 'old' for g is global	
+	20.ESC :| to run the shell commanands like :|dir,:||s
+	21.ESC :w-test and save the file
+	22.ESC v-starts visual mode for selecting the lines
+	23.ESC :r-filename will insert into the current file
+	24.ESC R-to replace more than one character
+	25.ESC y-operator to copy text using v
+	26.ESC yw-yanks one word
+	27.ESC o-opens the line below the cursor and start insert mode
+	28.ESC O-opens the line above the cursor
+	28.ESC a-insert text after the cursor
+	30.ESC A-insert text after the end of the line
+	31.ESC e-command moves to the end of thne word
+	32.ESC Y-operator yanks text
+	33.ESC R-enters replace mode until <ESC> is pressed
+	34.ESC ctrl-w to jump from one window to another
 
 
 
