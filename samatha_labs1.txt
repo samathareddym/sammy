@@ -1,0 +1,45 @@
+UNIX COMMANDS:
+
+INSERT MODE: where you can just type like normal text editor.press i for insert mode.
+
+COMMAND MODE:where you can give commands to the text editor to get things done.
+press ESC for command mode.
+	ESC x-to delete the unwanted character
+	ESC u-to undo the last command and U to undi the whole time
+	ESC CTRL-R to redo
+	ESC A-to append text at the end
+	ESC :wq-to save and exit
+	ESC :q!-to trash all changes
+	ESC dw-move the cursor to the begining of the word to delete the word
+	ESC 2w-to move the cursor two words forward
+	ESC 3e-to move the cursor at the end of the third word forward
+	ESC 0-to move to the start of the line
+	ESC d2w-which deletes two words
+	ESC dd-to delete the line
+	ESC p-puts the previously deleted text after the cursor
+	ESC r-to replace the character
+	ESC ce-to delete the word and places you in the insert mode
+	ESC gg-to move you to the start of the file
+	ESC %-to find matching
+	ESC G-to move to the bottom of the line
+	ESC :s/old/new/g-to substitute 'new' for 'old' for g is global	
+	ESC :| to run the shell commanands like :|dir,:||s
+	ESC :w-test and save the file
+	ESC v-starts visual mode for selecting the lines
+	ESC :r-filename will insert into the current file
+	ESC R-to replace more than one character
+	ESC y-operator to copy text using v
+	ESC yw-yanks one word
+	ESC o-opens the line below the cursor and start insert mode
+	ESC O-opens the line above the cursor
+	ESC a-insert text after the cursor
+	ESC A-insert text after the end of the line
+	ESC e-command moves to the end of thne word
+	ESC Y-operator yanks text
+	ESC R-enters replace mode until <ESC> is pressed
+	ESC ctrl-w to jump from one window to another
+
+
+
+
+
