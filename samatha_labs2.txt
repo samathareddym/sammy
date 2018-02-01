@@ -1,15 +1,6 @@
-WHO(1)                          User Commands                          WHO(1)
+1]WHO                         User Commands                          WHO(1)
 
-NAME
-       who - show who is logged on
-
-SYNOPSIS
-       who [OPTION]... [ FILE | ARG1 ARG2 ]
-
-DESCRIPTION
-       Print information about users who are currently logged in.
-
-       -a, --all
+        -a, --all
               same as -b -d --login -p -r -t -T -u
 
        -b, --boot
@@ -22,7 +13,7 @@ DESCRIPTION
               print line of column headings
 
        --ips  print  ips  instead  of hostnames. with --lookup, canonicalizes
-              based on stored IP, if available, rather than stored hostname
+              based on stored IP
 
        -l, --login
               print system login processes
@@ -64,26 +55,9 @@ DESCRIPTION
        --version
               output version information and exit
 
-       If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is
-       common.   If  ARG1  ARG2 given, -m presumed: 'am i' or 'mom likes' are
-       usual.
 
 
-
-
-LS(1)                                                                      User Commands                                                                      LS(1)
-
-NAME
-       ls - list directory contents
-
-SYNOPSIS
-       ls [OPTION]... [FILE]...
-
-DESCRIPTION
-       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
+2]LS
        -a, --all
               do not ignore entries starting with .
 
@@ -97,8 +71,7 @@ DESCRIPTION
               print C-style escapes for nongraphic characters
 
        --block-size=SIZE
-              scale sizes by SIZE before printing them; e.g., '--block-size=M' prints sizes in units of 1,048,576 bytes; see SIZE format below
-
+              scale sizes by SIZE before printing them;
        -B, --ignore-backups
               do not list implied entries ending with ~
 
@@ -118,16 +91,7 @@ DESCRIPTION
        -f     do not sort, enable -aU, disable -ls --color
 
        -F, --classify
-              append indicator (one of */=>@|) to entries
-
-       --file-type
-              likewise, except do not append '*'
-
-       --format=WORD
-              across -x, commas -m, horizontal -x, long -l, single-column -1, verbose -l, vertical -C
-
-       --full-time
-              like -l --time-style=full-iso
+              append indicator (one of */=>@|) to entriely
 
        -g     like -l, but do not list owner
 
@@ -168,8 +132,7 @@ DESCRIPTION
        -l     use a long listing format
 
        -L, --dereference
-              when showing file information for a symbolic link, show information for the file the link references rather than for the link itself
-
+              when showing file information for a symbolic link
        -m     fill width with a comma separated list of entries
 
        -n, --numeric-uid-gid
@@ -205,18 +168,6 @@ DESCRIPTION
 
        -S     sort by file size, largest first
 
-       --sort=WORD
-              sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X)
-
-       --time=WORD
-              with -l, show time as WORD instead of default modification time: atime or access or use (-u); ctime or status (-c); also use specified time  as  sort
-              key if --sort=time (newest first)
-
-       --time-style=STYLE
-              with  -l,  show times using style STYLE: full-iso, long-iso, iso, locale, or +FORMAT; FORMAT is interpreted like in 'date'; if FORMAT is FORMAT1<new‐
-              line>FORMAT2, then FORMAT1 applies to non-recent files and FORMAT2 to recent files; if STYLE is prefixed with 'posix-', STYLE takes effect only  out‐
-              side the POSIX locale
-
        -t     sort by modification time, newest first
 
        -T, --tabsize=COLS
@@ -243,26 +194,7 @@ DESCRIPTION
 
 
 
-CAL(1)                    BSD General Commands Manual                   CAL(1)
-
-NAME
-     cal, ncal — displays a calendar and the date of Easter
-
-SYNOPSIS
-     cal [-31jy] [-A number] [-B number] [-d yyyy-mm] [[month] year]
-     cal [-31j] [-A number] [-B number] [-d yyyy-mm] -m month [year]
-     ncal [-C] [-31jy] [-A number] [-B number] [-d yyyy-mm] [[month] year]
-     ncal [-C] [-31j] [-A number] [-B number] [-d yyyy-mm] -m month [year]
-     ncal [-31bhjJpwySM] [-A number] [-B number] [-H yyyy-mm-dd] [-d yyyy-mm]
-         [-s country_code] [[month] year]
-     ncal [-31bhJeoSM] [-A number] [-B number] [-d yyyy-mm] [year]
-
-
-DESCRIPTION
-     The cal utility displays a simple calendar in traditional format and ncal offers an alternative layout, more options and the date of Easter.  The new format
-     is a little cramped but it makes a year fit on a 25x80 terminal.  If arguments are not specified, the current month is displayed.
-
-     The options are as follows:
+3]CAL
 
      -h      Turns off highlighting of today.
 
@@ -283,8 +215,7 @@ DESCRIPTION
 
      -s country_code
              Assume the switch from Julian to Gregorian Calendar at the date associated with the country_code.  If not specified, ncal tries to guess the switch
-             date from the local environment or falls back to September 2, 1752.  This was when Great Britain and her colonies switched to the Gregorian Calendar.
-
+            
      -w      Print the number of the week below each week column.
 
      -y      Display a calendar for the specified year. This option is implied when a year but no month are specified on the command line.
@@ -296,20 +227,11 @@ DESCRIPTION
      -A number
            
 
- Manual page cal(1) line 11 (press h for help or q to quit)
 
 
 
+4]bc(
 
-
-bc(1)                                                                 General Commands Manual                                                                 bc(1)
-
-NAME
-       bc - An arbitrary precision calculator language
-
-SYNTAX
-       bc [ -hlwsqv ] [long-options] [  file ... ]
- OPTIONS
        -h, --help
               Print the usage and exit.
 
@@ -333,19 +255,8 @@ SYNTAX
 
 
 
-DATE(1)                                                                    User Commands                                                                    DATE(1)
+5]DATE
 
-NAME
-       date - print or set the system date and time
-
-SYNOPSIS
-       date [OPTION]... [+FORMAT]
-       date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
-
-DESCRIPTION
-       Display the current time in the given FORMAT, or set the system date.
-
-       Mandatory arguments to long options are mandatory for short options too.
 
        -d, --date=STRING
               display time described by STRING, not 'now'
@@ -356,17 +267,11 @@ DESCRIPTION
        -f, --file=DATEFILE
               like --date; once for each line of DATEFILE
 
-       -I[FMT], --iso-8601[=FMT]
-              output  date/time  in ISO 8601 format.  FMT='date' for date only (the default), 'hours', 'minutes', 'seconds', or 'ns' for date and time to the indi‐
-              cated precision.  Example: 2006-08-14T02:34:56-06:00
+       -I[FMT], .  FMT='date' for date only (the default), 'hours', 'minutes', 'seconds', or 'ns' for date and time to the indi‐
+              cated precision.  
 
        -R, --rfc-2822
               output date and time in RFC 2822 format.  Example: Mon, 14 Aug 2006 02:34:56 -0600
-
-       --rfc-3339=FMT
-              output date/time in RFC 3339 format.   FMT='date',  'seconds',  or  'ns'  for  date  and  time  to  the  indicated  precision.   Example:  2006-08-14
-              02:34:56-06:00
-
        -r, --reference=FILE
               display the last modification time of FILE
 
@@ -380,30 +285,16 @@ DESCRIPTION
 
 
 
-TIME(1)                                                               General Commands Manual                                                               TIME(1)
+6]TIME
 
-NAME
-       time - run programs and summarize system resource usage
-
-SYNOPSIS
-       time   [ -apqvV ] [ -f FORMAT ] [ -o FILE ]
-              [ --append ] [ --verbose ] [ --quiet ] [ --portability ]
-              [ --format=FORMAT ] [ --output=FILE ] [ --version ]
-              [ --help ] COMMAND [ ARGS ]
+  time run the program COMMAND with any given arguments ARG....  When
+       COMMAND finishes, time displays information about resources used by
+       COMMAND 
 
 
 
 
-UNAME(1)                                                                   User Commands                                                                   UNAME(1)
-
-NAME
-       uname - print system information
-
-SYNOPSIS
-       uname [OPTION]...
-
-DESCRIPTION
-       Print certain system information.  With no OPTION, same as -s.
+7]UNAME
 
        -a, --all
               print all information, in the following order, except omit -p and -i if unknown:
@@ -435,7 +326,7 @@ DESCRIPTION
        --help display this help and exit
 
        --version
-              output version information and exit
+              output version information and exit.
 
 
 
