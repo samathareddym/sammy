@@ -1,0 +1,231 @@
+
+in this session we learnt filter commands
+1] head:-c, --bytes=[-]NUM
+              print  the  first  NUM bytes of each file; with the leading '-',
+              print all but the last NUM bytes of each file
+
+       -n, --lines=[-]NUM
+              print the first NUM lines instead of  the  first  10;  with  the
+              leading '-', print all but the last NUM lines of each file
+
+       -q, --quiet, --silent
+              never print headers giving file names
+
+       -v, --verbose
+              always print headers giving file names
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
+2]tail: -c, --bytes=[+]NUM
+              output  the  last  NUM  bytes; or use -c +NUM to output starting
+              with byte NUM of each file
+
+       -f, --follow[={name|descriptor}]
+              output appended data as the file grows;
+
+              an absent option argument means 'descriptor'
+
+       -F     same as --follow=name --retry
+
+       -n, --lines=[+]NUM
+              output the last NUM lines, instead of the last  10;  or  use  -n
+              +NUM to output starting with line NUM
+
+       --max-unchanged-stats=N
+              with --follow=name, reopen a FILE which has not
+
+              changed  size  after  N  (default 5) iterations to see if it has
+              been unlinked or renamed (this is the usual case of rotated  log
+              files); with inotify, this option is rarely useful
+ --pid=PID
+              with -f, terminate after process ID, PID dies
+
+       -q, --quiet, --silent
+              never output headers giving file names
+
+       --retry
+              keep trying to open a file if it is inaccessible
+
+       -s, --sleep-interval=N
+              with -f, sleep for approximately N seconds (default 1.0) between
+              iterations; with inotify and --pid=P, check process P  at  least
+              once every N seconds
+
+       -v, --verbose
+              always output headers giving file names
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+		output version information and exit
+
+3]sort:-b, --ignore-leading-blanks
+              ignore leading blanks
+
+       -d, --dictionary-order
+              consider only blanks and alphanumeric characters
+
+       -f, --ignore-case
+              fold lower case to upper case characters
+
+       -g, --general-numeric-sort
+              compare according to general numerical value
+
+       -i, --ignore-nonprinting
+              consider only printable characters
+
+       -M, --month-sort
+              compare (unknown) < 'JAN' < ... < 'DEC'
+
+       -h, --human-numeric-sort
+              compare human readable numbers (e.g., 2K 1G)
+ -n, --numeric-sort
+              compare according to string numerical value
+
+       -R, --random-sort
+              shuffle, but group identical keys.  See shuf(1)
+
+       --random-source=FILE
+              get random bytes from FILE
+
+       -r, --reverse
+              reverse the result of comparisons
+
+       --sort=WORD
+              sort according to WORD: general-numeric  -g,  human-numeric  -h,
+              month -M, numeric -n, random -R, version -V
+
+       -V, --version-sort
+              natural sort of (version) numbers within text
+
+
+4]uniq: -c, --count
+              prefix lines by the number of occurrences
+
+       -d, --repeated
+              only print duplicate lines, one for each group
+
+       -D     print all duplicate lines
+
+       --all-repeated[=METHOD]
+              like  -D,  but  allow  separating  groups  with  an  empty line;
+              METHOD={none(default),prepend,separate}
+
+       -f, --skip-fields=N
+              avoid comparing the first N fields
+
+       --group[=METHOD]
+              show  all  items,  separating  groups  with   an   empty   line;
+              METHOD={separate(default),prepend,append,both}
+
+       -i, --ignore-case
+              ignore differences in case when comparing
+ -s, --skip-chars=N
+              avoid comparing the first N characters
+
+       -u, --unique
+              only print unique lines
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       -w, --check-chars=N
+              compare no more than N characters in lines
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+5]wc:c, --bytes
+              print the byte counts
+
+       -m, --chars
+              print the character counts
+
+       -l, --lines
+              print the newline counts
+
+       --files0-from=F
+              read  input  from the files specified by NUL-terminated names in
+              file F; If F is - then read names from standard input
+
+       -L, --max-line-length
+              print the maximum display width
+
+       -w, --words
+              print the word counts
+
+       --help display this help and exit
+ --version
+              output version information and exit
+
+6]cut: -b, --bytes=LIST
+              select only these bytes
+
+       -c, --characters=LIST
+              select only these characters
+
+       -d, --delimiter=DELIM
+              use DELIM instead of TAB for field delimiter
+
+       -f, --fields=LIST
+              select only these fields;  also print any line that contains  no
+              delimiter character, unless the -s option is specified
+
+       -n     (ignored)
+
+       --complement
+              complement the set of selected bytes, characters or fields
+
+       -s, --only-delimited
+              do not print lines not containing delimiters
+-output-delimiter=STRING
+              use  STRING  as  the  output delimiter the default is to use the
+              input delimiter
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+7]paste: -d, --delimiters=LIST
+              reuse characters from LIST instead of TABs
+
+       -s, --serial
+              paste one file at a time instead of in parallel
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
