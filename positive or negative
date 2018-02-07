@@ -1,0 +1,8 @@
+echo "enter a num"
+read n
+if [ $n -gt 0 ]
+then
+        echo "number is positive"
+else
+        echo "number is negative"
+fi
