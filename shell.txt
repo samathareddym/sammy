@@ -1,0 +1,4 @@
+date +%D
+date +%r
+date +%Y
+~        

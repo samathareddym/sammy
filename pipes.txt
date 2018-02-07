@@ -1,0 +1,11 @@
+1. display the third column of your file without printing the header "cgpa" and sort the same.
+	cut -d "," -f 3 samma.csv|sort -d samma.csv|grep -v "usl no."
+2. display only current time using date command.
+	cut -d "," -f 2 date.txt|grep -v date.txt
+4.print number of lines from ls-l o/p.
+5.display usn from 7-14 along with other files.
+	tail -n 7 samma.csv|grep -v samma.csv
+6.sort only name fields using positions.
+	cut -d "," -f 2 names.csv|sort -d names.csv|grep -v "names"
+
+
