@@ -1,0 +1,5 @@
+ dirdate=$(date +%Y-%m-%d)
+ for file in *; 
+ do
+   mv "$file" "$dirdate"_"$file"
+ done
