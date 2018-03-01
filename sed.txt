@@ -1,0 +1,31 @@
+1] display the employee who is the manager ::sed -n 'p' employee.lst|grep -i "manager"
+	4|sahana|18000|branch manager
+	5|lavisha|17000|branch manager assistant
+
+
+2]display the employee 1 and 2::sed -n '3,4p' employee.lst
+	1|samatha|20000|chairmen
+	2|abhi|2000|managing director
+
+
+3] display employee salary starting with 2:: sed -n 'p' employee.lst|grep -i "2000"
+	1|samatha|20000|chairmen
+	2|abhi|2000|managing director
+	9|swathi|12000|team member
+	10|shashank|12000|team member
+4] replce manager with director::sed 's/manager/director/g' employee.lst
+
+	employeeid|name|salary|designation
+	1|samatha|20000|chairmen
+	2|abhi|2000|managing director
+	3|rakshith|19000|assistant managing director
+	4|sahana|18000|branch director
+	5|lavisha|17000|branch director assistant
+	6|nida|15000|team presidant
+	7|divya|14000|assistant team presidant
+	8|prajval|13000|team leader
+	9|swathi|12000|team member
+	10|shashank|12000|team member
+
+
+
