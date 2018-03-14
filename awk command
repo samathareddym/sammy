@@ -5,7 +5,7 @@
 127|sameer|director  |1997^Z
 
 1] write awk command to delete all blank spaces or lines from a file.
-         awk '/^\s*$/d' emp.lst
+         sed '/^\s*$/d' emp.lst
 
 
 2]write a awk command to print the last field without knowing the no. of fields in the ,ine.
