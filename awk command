@@ -14,3 +14,15 @@
 
 3]print only the odd no.of lines of life
          awk 'NR%2==1' emp.lst
+
+
+4] print first five lines
+         awk -F "|" 'NR=1,NR=5' emp.lst
+         
+         
+5]print last 3 lines
+         awk -F "|" 'NR=3,NR=5' emp.lst
+         
+         
+6]print 2nd line to 4th line
+         awk -F "|" 'NR
