@@ -8,3 +8,9 @@ do
 	fi
 	echo $name
 done
+
+$ dialog --title "hello" --msgbox "hi" 20 40 
+$ dialog --title "hello" --yesno "happy" 20 40 
+$ dialog --title "hello" --infobox "jappy" 10 20 
+$ dialog --title "hello" --menu "enter the option" 10 20 3 1 red,2 green,3 blue
+$ dialog --title "hello" --checklist "tick the list" 10 20 3 1 red on,2 green off,3 blue on
