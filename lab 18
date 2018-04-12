@@ -1,0 +1,14 @@
+*Thought for the day program*
+
+quotes=("Work is worship" "Try and try till u succeed" "Make hay while sunshines")
+quote=${quotes[$RANDOM % ${#quotes[@]}]}
+figlet $quote
+echo -e "\n"
+
+
+
+*Use of wall command in unix*
+
+wall writes a message to other users.
+$ wall "Hello Everyone" 
+When the wall command is used in some username it sends a message to all other users in that system
